@@ -1,0 +1,68 @@
+{
+  "goods": [
+    {
+      "id":1,
+      "proname":"苹果",
+      "price":5,
+      "count": 1000,
+      "desc": "山东好苹果"
+    }
+  ],
+  "address": [],
+  "users":[
+    {
+      "id": 1,
+      "username": "lisi",
+      "password": "123456",
+      "nickname": "李四1",
+      "age": 20,
+      "tel": 17729930454,
+      "sex":"男",
+      "avatar":"https://img0.baidu.com/it/u=530540642,263790536&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667"
+    },
+    {
+      "id": 2,
+      "username": "zs",
+      "password": "123456",
+      "nickname": "张三ll",
+      "age": 20,
+      "tel": 17729340454,
+      "sex":"男",
+      "avatar":"https://inews.gtimg.com/news_bt/OIPr9G8LrCpP4K3cdWrmvalN2p2YWWB3URkibvS38awOEAA/641"
+    }
+  ],
+  "menuList":[
+    {
+      "img": "https://m15.360buyimg.com/mobilecms/jfs/t1/175540/24/19329/6842/60ec0b0aEf35f7384/ec560dbf9b82b90b.png!q70.jpg",
+      "title": "京东超市1"
+    },
+    {
+     "img": "https://m15.360buyimg.com/mobilecms/jfs/t1/178015/31/13828/6862/60ec0c04Ee2fd63ac/ccf74d805a059a44.png!q70.jpg",
+      "title": "京东数码1"
+    },
+    {
+      "img": "https://m15.360buyimg.com/mobilecms/jfs/t1/54043/33/19389/4660/62b049dbE3b9aef75/2fcd31afd5d702e4.png!q70.jpg",
+      "title": "京东百货1"
+    },
+    {
+      "img": " https://m15.360buyimg.com/mobilecms/jfs/t1/54043/33/19389/4660/62b049dbE3b9aef75/2fcd31afd5d702e4.png!q70.jpg",
+      "title": "京东生鲜1"
+    },
+    {
+      "img": "https://m15.360buyimg.com/mobilecms/jfs/t1/175540/24/19329/6842/60ec0b0aEf35f7384/ec560dbf9b82b90b.png!q70.jpg",
+      "title": "京东超市2"
+    },
+    {
+      "img": "https://m15.360buyimg.com/mobilecms/jfs/t1/178015/31/13828/6862/60ec0c04Ee2fd63ac/ccf74d805a059a44.png!q70.jpg",
+      "title": "京东数码2"
+    },
+    {
+      "img": "https://m15.360buyimg.com/mobilecms/jfs/t1/54043/33/19389/4660/62b049dbE3b9aef75/2fcd31afd5d702e4.png!q70.jpg",
+      "title": "京东百货2"
+    },
+    {
+      "img": " https://m15.360buyimg.com/mobilecms/jfs/t1/54043/33/19389/4660/62b049dbE3b9aef75/2fcd31afd5d702e4.png!q70.jpg",
+      "title": "京东生鲜2"
+    }
+  ]
+}

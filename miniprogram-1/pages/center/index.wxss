@@ -1,0 +1,66 @@
+/* pages/center/index.wxss */
+/* #box1 {
+  color: rgb(255, 255, 0);
+  height: 100px;
+  font-size: 20pz;
+  border: 1px solid #000;
+  line-height: 100px;
+  text-align: center;
+  background-color: pink;
+}
+
+#box2 {
+  color: rgb(0, 132, 255);
+  height: 200px;
+  font-size: 20pz;
+  border: 1px solid #000;
+  line-height: 100px;
+  text-align: center;
+  background-color: pink;
+}
+
+.box {
+  color: #fff;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+  line-height: 100px;
+  text-align: center;
+} */
+/* .a1{
+  display: inline;
+  border: 1px solid red;
+  width: 100px;
+}
+
+.a2{
+  display: inline-block;
+  border: 1px solid red;
+  width: 100px;
+} */
+
+input{
+  /* box-sizing: border-box; */
+  padding: 20px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.li{
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  display: flex;
+  justify-content: space-between;
+}
+
+.li text{
+  margin-right: 10px;
+}
+
+.red{
+  color: red;
+}
+
+.green{
+  color: green;
+}

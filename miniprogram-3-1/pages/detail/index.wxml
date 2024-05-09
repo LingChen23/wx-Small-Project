@@ -1,0 +1,45 @@
+<!--pages/detail/index.wxml-->
+<view class="cover">
+  <image bind:tap="showfn" src="{{info.img1}}" mode=""/>
+</view>
+
+<view>
+  {{info.proname}}
+</view>
+
+<view>
+  库存 :{{info.stock}}
+</view>
+
+<view>
+  已经售卖 :{{info.sales}}
+</view>
+
+<view>
+  <text class="price">{{info.originprice*info.discount/10}}</text>
+  <text class="originPrice">原价{{info.originprice}}</text>
+</view>
+
+
+<view class="model" wx:if="{{show}}" bindtap="hideFn">
+  <view class="count">
+    {{index+1}}/{{imgs.length}}
+  </view>
+
+<!-- 阻止冒泡 -->
+  <swiper circular bindchange="changeIndex" catchtap="showfn">
+    <swiper-item wx:for="{{imgs}}" wx:key="index">
+      <image src="{{item}}" mode=""/>
+    </swiper-item>
+    <!-- <swiper-item>
+      <image src="{{info.img2}}" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{info.img3}}" mode=""/>
+    </swiper-item> -->
+  </swiper>
+
+  <view>
+    
+  </view>
+</view>

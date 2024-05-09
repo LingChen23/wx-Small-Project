@@ -1,0 +1,34 @@
+.box{
+  display: flex;
+}
+
+.box > view{
+  /* border: 1px solid red;
+  min-height: 300px; */
+}
+
+.box .main{
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box .menu{
+  width: 80px;
+}
+
+.menu view{
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #999;
+}
+
+.menu .active{
+  background: green;
+  color: #e1e1e1;
+}
+
+.main image{
+  width: 200px;
+  height: 200px;
+}

@@ -1,0 +1,16 @@
+<view class='cover'>
+	<image src="{{info.img1}}" mode="" />
+</view>
+<view>
+	{{info.proname}}
+</view>
+
+<view>
+	库存 :{{info.stock}}
+</view>
+<view>
+	已经售卖:{{info.sales}}
+</view>
+<view>
+	现价 <text class='price'>{{info.originprice*info.discount/10}}</text> <text class='originprice'>原价{{info.originprice}}</text>
+</view>

@@ -1,0 +1,47 @@
+/* pages/banner/index.wxss */
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+swiper{
+  height: 280px;
+}
+
+.container{
+  display: flex; 
+  flex-wrap: wrap;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.list-item{
+  width: 33%;
+  margin-top: 10px;
+  position: relative;
+}
+
+.container image{
+  height: 30vw;
+  width: 30vw;
+  
+}
+
+.list-item .text{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  columns: #778877;
+  padding: 4px 0;
+}
+
+.list-item .count{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: rgba(0, 0, 0, .7);
+  padding: 2px 4px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 4px;
+}

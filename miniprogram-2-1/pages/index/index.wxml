@@ -1,0 +1,25 @@
+<!-- <view hover-class = "active" class = 'nav-item'>
+  首页
+</view>
+
+<view hover-class = "active" class = 'nav-item'>
+  中心
+</view>
+
+<view hover-class = "active">
+  我的
+</view>
+
+<view hover-class = "active" class = 'nav-item'>
+  关于
+</view> -->
+
+<view class = 'box'>
+  <view class = 'son son1'>
+    1
+  </view>
+
+  <view class = 'son'>
+    2
+  </view>
+</view>

@@ -1,0 +1,71 @@
+<view class="top" style="padding-top:{{safeTop+5}}+px">
+  <text>城市</text>
+  <view>搜索</view>
+</view>
+
+<view style="height: 100px"></view>
+
+<!--轮播图-->
+<swiper autoplay indicator-dots>
+  <swiper-item wx:for="{{bannerList}}" wx:key="index">
+    <image src="{{item.img}}"></image>
+  </swiper-item>
+</swiper>
+
+<!--导航列表-->
+<view class="nav">
+  <view wx:for="{{menuList}}">
+    <navigator url = "/page/detail/index?id={{item.proid}}">
+    <image src="{{item.img}}" mode="" />
+    <text>
+      {{item.title}}
+    </text>
+  </navigator>
+  </view>
+</view>
+
+<!--推荐列表-->
+<view class="title">
+  推荐列表
+</view>
+
+<view class="shop">
+  <view class="shop-item" wx:for="{{shopList}}">
+  <navigator url = "/page/detail/index?id={{item.proid}}">
+    <image src="{{item.img1}}" mode=""/>
+    <view class="proname">
+      {{item.proname}}
+    </view>
+    <view style="color: red">
+      {{item.originprice}}
+    </view>
+  </navigator>
+  </view>
+</view>
+
+<view class="page">
+  <view class='{{page==(item+1)?"active":""}}' bindtap='setPage' data-page="{{item+1}}" wx:for="{{10}}">
+    {{item+1}}
+  </view>
+</view>
+
+<view class="loading">
+  加载中
+</view>
+<!-- <view class="box">
+  <view wx:for="{{shopList}}">
+    <image src="" mode=""/>
+    <view class="proname">
+      {{item.proname}}
+    </view>
+  </view>
+  <view>
+  2
+  </view>
+  <view>
+  3
+  </view>
+  <view class="shop-item" wx:for="">
+    
+  </view>
+</view> -->

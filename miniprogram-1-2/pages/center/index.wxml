@@ -1,0 +1,94 @@
+<view class = 'box1'>
+  <view class = 'box-item'>
+    <image src = "../../imagines/bg1.jpg" mode =""/>
+    <view class = 'text'>
+      百宝箱1
+    </view>
+  </view>
+
+  <view class = 'box-item'>
+    <image src = "../../imagines/bg2.jpg" mode =""/>
+    <view class = 'text'>
+      百宝箱2
+    </view>
+  </view>
+
+  <view class = 'box-item'>
+    <image src = "../../imagines/bg3.jpeg" mode =""/>
+    <view class = 'text'>
+      百宝箱3
+    </view>
+  </view>
+</view>
+
+<view class='list'>
+  <view class='list-item'>
+    <image src = "../../imagines/bg1.jpg" mode =""/>
+
+    <view class = 'content'>
+      <view>
+        万象之王1
+      </view>
+      <view>
+        热点 123453
+      </view>
+
+      <view>
+        天蚕土豆
+      </view>
+    </view>
+  </view>
+
+  <view class='list-item'>
+    <image src = "../../imagines/bg2.jpg" mode =""/>
+
+    <view class = 'content'>
+      <view>
+        万象之王2
+      </view>
+      <view>
+        热点 123453
+      </view>
+
+      <view>
+        天蚕土豆
+      </view>
+    </view>
+  </view>
+
+  <view class='list-item'>
+    <image src = "../../imagines/bg3.jpeg" mode =""/>
+
+    <view class = 'content'>
+      <view>
+        万象之王3
+      </view>
+      <view>
+        热点 123453
+      </view>
+
+      <view>
+        天蚕土豆
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="box box1">
+  <view class="son">
+    son
+  </view>
+</view>
+
+<view class="box">
+</view>
+
+<view class="wrap">
+ asdfgfds
+</view>
+
+<image class="img1" src = '../../imagines/bg1.jpg'>
+</image>
+

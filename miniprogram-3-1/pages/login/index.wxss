@@ -1,0 +1,19 @@
+/* pages/login/index.wxss */
+.form{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.form-item {
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+}

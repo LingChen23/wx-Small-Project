@@ -1,0 +1,88 @@
+.box1{
+  margin-top: 20px;
+}
+
+.box-item{
+  display: inline-block;
+  width: 30%;
+  margin-left: 2.5%;
+  text-align: center;
+}
+
+.box-item image{
+  width: 100%;
+  height: 60px;
+  color: #999;
+  border-radius: 20px;
+}
+
+.box-item .text{
+  padding: 10px 0;
+  /* height: 30px;
+  line-height: 30px; */
+  /* border: 1px solid red; */
+}
+
+.list-item{
+  margin-top: 10px;
+  padding: 10px;
+  border-bottom: 1px solid red;
+}
+
+.list image{
+  width: 100px;
+  height: 150px;
+  vertical-align: top; 
+}
+
+/* .list{
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+} */
+
+.list .content{
+  display: inline-block;
+  margin-left: 10px;
+  width: 120px;
+  /* border: 1px solid pink; */
+}
+
+.list .content view{
+  margin: 10px 0;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.box .son{
+  width: 80px;
+  height: 80px;
+  background: green;
+  
+}
+
+.box1{
+  padding: 10px;
+}
+
+.wrap{
+  border: 1px solid red;
+  /* height: 40px;
+  line-height: 40px; */
+  /* margin-left: 20px; */
+  /* padding-left: 20px;
+  box-sizing: border-box; */
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+.img1{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}

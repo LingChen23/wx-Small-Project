@@ -1,0 +1,125 @@
+<!-- <view class = 'box'>
+  <view>
+    <image src = "../../imagines/bg1.jpg" mode = ""/>
+    <text>
+      喜玛拉雅山
+    </text>
+  </view>
+
+  <view>
+    <image src = "../../imagines/bg1.jpg" mode = ""/>
+    <text>
+      喜玛拉雅山
+    </text>
+  </view>
+
+  <view>
+    <image src = "../../imagines/bg1.jpg" mode = ""/>
+    <text>
+      喜玛拉雅山
+    </text>
+  </view>
+</view> -->
+
+<!-- <view class = 'wrap'>
+  <view class = 'a1'>
+    1
+  </view>
+
+  <view class = 'a2'>
+    2
+  </view>
+
+  <view class="a3">
+    3
+  </view>
+
+  <view class = 'a4'>
+    4
+  </view>
+
+  <view class = 'a5'>
+    5
+  </view>
+
+  <view class="a6">
+    6
+  </view>
+  <view class = 'a7'>
+    7
+  </view>
+
+  <view class = 'a8'>
+    8
+  </view>
+
+  <view class="a9">
+    9
+  </view>
+
+  <view class="a10">
+    10
+  </view>
+</view> -->
+
+<view class = "wrap">
+  <view>
+    <image src="../../imagines/bg1.jpg" mode="" />
+    <text>百宝箱1</text>
+  </view>
+
+  <view>
+    <image src="../../imagines/bg2.jpg" mode="" />
+    <text>百宝箱2</text>
+  </view>
+
+  <view>
+    <image src="../../imagines/bg3.jpeg" mode="" />
+    <text>百宝箱3</text>
+  </view>
+
+  <view>
+    <image src="../../imagines/bg1.jpg" mode="" />
+    <text>百宝箱4</text>
+  </view>
+
+  <view>
+    <image src="../../imagines/bg2.jpg" mode="" />
+    <text>百宝箱5</text>
+  </view>
+
+  <view>
+    <image src="../../imagines/bg3.jpeg" mode="" />
+    <text>百宝箱6</text>
+  </view>
+
+  <view>
+    <image src="../../imagines/bg1.jpg" mode="" />
+    <text>百宝箱7</text>
+  </view>
+
+  <view>
+    <image src="../../imagines/bg2.jpg" mode="" />
+    <text>百宝箱8</text>
+  </view>
+
+  <view>
+    <image src="../../imagines/bg3.jpeg" mode="" />
+    <text>百宝箱9</text>
+  </view>
+
+  <view>
+    <image src="../../imagines/bg1.jpg" mode="" />
+    <text>百宝箱</text>
+  </view>
+
+</view>
+
+<view class="top">
+  top
+</view>
+
+<view class ='f'>
+  <view class="son">
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<view>
+  <input value='{{value}}' placeholder="请输入..." bindconfirm="addList"/>
+</view>
+
+<view class = 'li {{index %2 == 1? "green" : "red"}}' wx:for ='{{list}}' wx:key="index">
+  <view>
+  <text>{{index+1}}</text>
+  <text>{{item.text}}</text>
+  </view>
+  <view bind:tap="delList" data-id='{{item.id}}'>
+    X
+  </view>
+</view>

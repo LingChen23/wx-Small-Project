@@ -1,0 +1,21 @@
+/* pages/detail/index.wxss */
+.cover image {
+	width: 100%
+}
+
+view {
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+
+.price {
+	color: red;
+}
+
+.originprice {
+	color: #aaa;
+	text-decoration: line-through;
+	/**中线*/
+	margin-left: 5px;
+	font-size: 12px;
+}

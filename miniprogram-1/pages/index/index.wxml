@@ -1,0 +1,22 @@
+<!-- <view>
+  姓名：{{dog.name}}
+</view>
+<view>
+  颜色：{{dog.color}}
+</view>
+<view>
+  年龄：{{dog.age}}
+</view> -->
+<button bind:tap="add">点击添加</button>
+
+<view class="box">
+  <view bind:tap="del" data-index ='{{index}}' wx:for='{{navs}}'>
+    {{item}} --- {{index}}
+  </view>
+</view>
+
+<view>
+  {{navs}}
+</view>
+
+<!-- <button bind:tap="del">删除</button> -->

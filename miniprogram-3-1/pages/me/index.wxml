@@ -1,0 +1,10 @@
+<!--pages/me/index.wxml-->
+
+<view wx:if="{{user.id}}">
+  <image src="{{user.avatar}}" mode=""/>
+  <view> {{user.nickname}} </view>
+  <view> {{user.sex}} </view>
+  <view> {{user.tel}} </view>
+</view>
+
+<navigator wx:else url="/pages/login/index"> 登录 </navigator>
