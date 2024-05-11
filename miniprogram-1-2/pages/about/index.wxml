@@ -65,55 +65,57 @@
 <view class = "wrap">
   <view>
     <image src="../../imagines/bg1.jpg" mode="" />
-    <text>百宝箱1</text>
+    <text>美食外卖</text>
   </view>
 
   <view>
     <image src="../../imagines/bg2.jpg" mode="" />
-    <text>百宝箱2</text>
+    <text>超市便利</text>
   </view>
 
   <view>
     <image src="../../imagines/bg3.jpeg" mode="" />
-    <text>百宝箱3</text>
+    <text>水果鲜花</text>
   </view>
 
   <view>
     <image src="../../imagines/bg1.jpg" mode="" />
-    <text>百宝箱4</text>
+    <text>买菜</text>
   </view>
 
   <view>
     <image src="../../imagines/bg2.jpg" mode="" />
-    <text>百宝箱5</text>
+    <text>买药</text>
   </view>
 
   <view>
     <image src="../../imagines/bg3.jpeg" mode="" />
-    <text>百宝箱6</text>
+    <text>甜品饮品</text>
   </view>
 
   <view>
     <image src="../../imagines/bg1.jpg" mode="" />
-    <text>百宝箱7</text>
+    <text>爆红包</text>
   </view>
 
   <view>
     <image src="../../imagines/bg2.jpg" mode="" />
-    <text>百宝箱8</text>
+    <text>赚吃货豆</text>
   </view>
 
   <view>
     <image src="../../imagines/bg3.jpeg" mode="" />
-    <text>百宝箱9</text>
+    <text>奶茶果汁</text>
   </view>
 
   <view>
     <image src="../../imagines/bg1.jpg" mode="" />
-    <text>百宝箱</text>
+    <text>全部</text>
   </view>
 
 </view>
+
+
 
 <view class="top">
   top
@@ -121,5 +123,67 @@
 
 <view class ='f'>
   <view class="son">
+  </view>
+</view>
+
+<view class = "wrap_">
+  <view class = "item">
+    <text class="text-item">天天爆红包</text>
+  </view>
+
+  <view class = "item">
+    <text class="text-item">减配送费</text>
+  </view>
+
+  <!-- <view class = "item">
+    <text class="text-item">无门槛红包</text>
+  </view> -->
+
+  <view class = "item">
+    <text class="text-item">满减优惠</text>
+  </view>
+</view>
+
+<view class='list'>
+  <view class='list-item'>  <image src = "../../imagines/mx.jpg" mode =""/>
+    <view class = 'content'>
+    
+      <view>
+        蜜雪冰城（荣信财富广场2楼）
+      </view>
+      <view>
+        4.9分 月售2000+ 
+      </view>
+
+      <view>
+        起送￥15 免配送费
+      </view>
+
+      <view class='merchant'>
+        商家回复快
+      </view>
+    </view>
+  </view>
+
+  <view class='list-item'>
+    <image src = "../../imagines/cc.jpg" mode =""/>
+
+    <view class = 'content'>
+      <view>
+        700CC（铁西荣信财富广场2楼）
+      </view>
+      <view>
+        4.9分 月售800+ 
+      </view>
+
+      <view>
+        起送￥15 免配送费
+      </view>
+
+      <view class='merchant'>
+        商家回复快
+      </view>
+
+    </view>
   </view>
 </view>
