@@ -33,56 +33,59 @@ Page({
     });
   },
 
-  // 当用户在输入框中输入时，更新 value 的值
-  handleInput(e) {
+   // 当用户在输入框中输入时，更新 value 的值
+   handleInput(e) {
     this.setData({
       value: e.detail.value
     });
   },
- // 当用户点击留言本身时，准备修改留言
- prepareModifyMessage(e) {
-  let id = e.currentTarget.dataset.id;
-  let item = this.data.list.find(item => item.id === id);
 
-  if (item) {
-    this.setData({
-      editIndex: id,
-      value: item.text
-    });
-  }
-},
+  // 当用户点击留言本身时，准备修改留言
+  prepareModifyMessage(e) {
+    let id = Number(e.currentTarget.dataset.id); // 将 id 转换为数字
+    let item = this.data.list.find(item => item.id === id);
 
-// 当用户在输入框中输入时，更新 value 的值
-valueChange(e) {
-  this.setData({
-    value: e.detail.value
-  });
-},
-
-
-// 当用户按下回车键时，根据 editIndex 的值判断是添加新留言还是修改现有留言
-confirmInput() {
-  let { value, list, editIndex } = this.data;
-
-  if (editIndex !== null) { // 修改现有留言
-    let index = list.findIndex(item => item.id === editIndex);
-    if (index !== -1) {
-      list[index].text = value;
+    if (item) {
       this.setData({
-        list,
-        editIndex: null,
+        editIndex: id,
+        value: item.text
+      });
+    }
+  },
+
+  // 删除留言
+  delList(e) {
+    let id = Number(e.currentTarget.dataset.id); // 将 id 转换为数字
+    let list = this.data.list.filter(item => item.id !== id);
+
+    this.setData({
+      list
+    });
+  },
+
+  // 当用户按下回车键时，根据 editIndex 的值判断是添加新留言还是修改现有留言
+  confirmInput() {
+    let { value, list, editIndex } = this.data;
+
+    if (editIndex !== null) { // 修改现有留言
+      let index = list.findIndex(item => item.id === editIndex);
+      if (index !== -1) {
+        list[index].text = value;
+        this.setData({
+          list,
+          editIndex: null,
+          value: ''
+        });
+      }
+    } else { // 添加新留言
+      this.setData({
+        list: [...list, {
+          id: Date.now(),
+          text: value
+        }],
         value: ''
       });
     }
-  } else { // 添加新留言
-    this.setData({
-      list: [...list, {
-        id: Date.now(),
-        text: value
-      }],
-      value: ''
-    });
-  }
 },
 
 // 当用户点击按钮时，删除所有留言
