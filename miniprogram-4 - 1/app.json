@@ -1,8 +1,6 @@
 {
   "pages": [
     "pages/about/index","pages/banner/index",
-    
-    
     "pages/center/index",
     "pages/index/index",
     "pages/logs/logs"

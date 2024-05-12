@@ -6,23 +6,26 @@
     "pages/logs/logs"
   ],
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "主页",
-      "iconPath": "imagines/guanzhu1.png",
-      "selectedIconPath": "imagines/guanzhu2.png"
-    },
+    "list": [
+      { "pagePath": "pages/about/index",
+        "text": "首页",
+        "iconPath": "imagines/sy.png",
+        "selectedIconPath": "imagines/ele.png"
+      },
   
   { "pagePath": "pages/center/index",
     "text": "中心",
     "iconPath": "imagines/shequ1.png",
     "selectedIconPath": "imagines/shequ2.png"},
 
-  { "pagePath": "pages/about/index",
-    "text": "关于",
-    "iconPath": "imagines/shequ1.png",
-    "selectedIconPath": "imagines/shequ2.png"
-  }]
+      {
+      "pagePath": "pages/index/index",
+      "text": "我的",
+      "iconPath": "imagines/guanzhu1.png",
+      "selectedIconPath": "imagines/guanzhu2.png"
+    }
+
+]
   },
   "window": {
     "navigationBarTextStyle": "black",
