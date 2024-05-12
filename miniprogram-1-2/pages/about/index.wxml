@@ -64,52 +64,52 @@
 
 <view class = "wrap">
   <view>
-    <image src="../../imagines/bg1.jpg" mode="" />
+    <image src="../../imagines/food.png" mode="" />
     <text>美食外卖</text>
   </view>
 
   <view>
-    <image src="../../imagines/bg2.jpg" mode="" />
+    <image src="../../imagines/consume.png" mode="" />
     <text>超市便利</text>
   </view>
 
   <view>
-    <image src="../../imagines/bg3.jpeg" mode="" />
+    <image src="../../imagines/basket.png" mode="" />
     <text>水果鲜花</text>
   </view>
 
   <view>
-    <image src="../../imagines/bg1.jpg" mode="" />
+    <image src="../../imagines/vege.png" mode="" />
     <text>买菜</text>
   </view>
 
   <view>
-    <image src="../../imagines/bg2.jpg" mode="" />
+    <image src="../../imagines/medi.png" mode="" />
     <text>买药</text>
   </view>
 
   <view>
-    <image src="../../imagines/bg3.jpeg" mode="" />
+    <image src="../../imagines/beve.png" mode="" />
     <text>甜品饮品</text>
   </view>
 
   <view>
-    <image src="../../imagines/bg1.jpg" mode="" />
+    <image src="../../imagines/red_packet.png" mode="" />
     <text>爆红包</text>
   </view>
 
   <view>
-    <image src="../../imagines/bg2.jpg" mode="" />
+    <image src="../../imagines/bean.png" mode="" />
     <text>赚吃货豆</text>
   </view>
 
   <view>
-    <image src="../../imagines/bg3.jpeg" mode="" />
+    <image src="../../imagines/tea.png" mode="" />
     <text>奶茶果汁</text>
   </view>
 
   <view>
-    <image src="../../imagines/bg1.jpg" mode="" />
+    <image src="../../imagines/all.png" mode="" />
     <text>全部</text>
   </view>
 
@@ -118,12 +118,16 @@
 
 
 <view class="top">
-  top
+  <image class="top-image" src="../../imagines/top.png" mode=""/>
 </view>
 
 <view class ='f'>
   <view class="son">
+    <text class="green-text">￥5</text>
+    <text class="green-subtext">满30可用</text>
   </view>
+  <text class="red-text">可膨胀红包</text>
+  <text class="red-subtext">添加福利官，红包可膨胀</text>
 </view>
 
 <view class = "wrap_">
@@ -145,45 +149,92 @@
 </view>
 
 <view class='list'>
+  <view class='list-item'>
+  <image src = "../../imagines/kfc.jpg" mode =""/>
+
+  <view class = 'content'>
+    <view class="name">
+      肯德基宅急送（翟）
+    </view>
+    <view class="score">
+      4.9分 月售1000+ 
+    </view>
+
+    <view class="ride">
+  起送￥20 满30配送￥4.5 <text style="color: #999; text-decoration: line-through;">￥6</text>
+</view>
+
+
+    <view class='merchant'>
+      <image src="../../imagines/pk.png" class="icon" />
+      <text>铁西汉堡薯条·第1名</text>
+    </view>
+  </view>
+</view>
+
   <view class='list-item'>  <image src = "../../imagines/mx.jpg" mode =""/>
     <view class = 'content'>
     
-      <view>
-        蜜雪冰城（荣信财富广场2楼）
+      <view class="name">
+        蜜雪冰城（荣信财富）
       </view>
-      <view>
+      <view class="score">
         4.9分 月售2000+ 
       </view>
 
-      <view>
+      <view class="ride">
         起送￥15 免配送费
       </view>
 
       <view class='merchant'>
+        <image src="../../imagines/com.png" class="icon" />
         商家回复快
       </view>
     </view>
   </view>
 
   <view class='list-item'>
-    <image src = "../../imagines/cc.jpg" mode =""/>
+  <image src = "../../imagines/cc.jpg" mode =""/>
 
-    <view class = 'content'>
-      <view>
-        700CC（铁西荣信财富广场2楼）
-      </view>
-      <view>
-        4.9分 月售800+ 
-      </view>
+  <view class = 'content'>
+    <view class="name">
+      700CC（铁西荣信财富）
+    </view>
+    <view class="score">
+      4.9分 月售800+ 
+    </view>
 
-      <view>
-        起送￥15 免配送费
-      </view>
+    <view class="ride">
+      起送￥15 免配送费
+    </view>
 
-      <view class='merchant'>
-        商家回复快
-      </view>
-
+    <view class='merchant'>
+      <image src="../../imagines/com.png" class="icon" />
+      <text>商家回复快</text>
     </view>
   </view>
+</view>
+
+<view class='list-item'>
+  <image src = "../../imagines/flower.jpg" mode =""/>
+
+  <view class = 'content'>
+    <view class="name">
+      芊花艺店（鲜花·玫瑰）
+    </view>
+    <view class="score">
+      5.0分 月售200+ 
+    </view>
+
+    <view class="ride">
+      起送￥0 免配送费
+    </view>
+
+    <view class='merchant'>
+      <image src="../../imagines/com.png" class="icon" />
+      <text>"花很漂亮"</text>
+    </view>
+  </view>
+</view>
+
 </view>

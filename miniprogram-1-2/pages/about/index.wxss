@@ -61,14 +61,13 @@
   border-radius: 50%;
 }
 
-.top{
-  position: fixed;  
+.top {
+  position: fixed;
   right: 0;
   bottom: 20px;
 
   width: 50px;
   height: 50px;
-  background: #000;
   color: #e1e1e1;
   font-weight: bold;
   text-align: center;
@@ -76,7 +75,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent; /* 设置背景为透明 */
 }
+
+.top-image {
+  width: 100%;
+  height: 100%;
+}
+
 
 .f{
   width: 80vw;
@@ -85,6 +91,10 @@
   border-radius: 15px;
   margin: 10px 20px;
   position: relative;/**相对定位**/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .f .son{
@@ -96,6 +106,26 @@
   top: 10px;
   border-radius: 40px;
 /**绝对定位 根据父组件定位**/
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.green-text, .red-text {
+  font-size: 24px; /* 设置大字体 */
+  color: rgba(255, 255, 255, 0.89); /* 设置字体颜色为白色 */
+  margin-bottom: 5px; /* 在两行字之间添加间隔 */
+}
+
+.green-subtext, .red-subtext {
+  font-size: 14px; /* 设置小字体 */
+  color: rgba(255, 255, 255, 0.89); /* 设置字体颜色为白色 */
+}
+
+.red-text, .red-subtext {
+  /* 省略了部分代码 */
+  text-align: left; /* 设置文本左对齐 */
+  padding-left: 60px; /* 设置左边的间距 */
 }
 
 /***
@@ -123,11 +153,17 @@
   font-size: 18px;
 }
 
-.list-item{
-  margin-top: 10px;
-  padding: 10px;
-  border-bottom: 1px solid red;
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  background-color: white; /* 设置列表项的背景色为白色 */
+  margin-bottom: 10px; /* 创建列表项间的间隔 */
+  border-radius: 10px; /* 创建圆角 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
 }
+
 
 .list image{
   width: 100px;
@@ -163,6 +199,7 @@
   flex-direction: column;
   flex-grow: 1;
   overflow: hidden;
+  margin-left: 20px; /* 在左侧添加20px的间距 */
 }
 
 .content view {
@@ -170,3 +207,33 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.content .name{
+  font-size: 24px; /* 设置大字体 */
+  color: rgba(10, 10, 10, 0.89); /* 设置字体颜色为深灰色 */
+  margin-bottom: 5px; /* 在两行字之间添加间隔 */
+  line-height: 1.5; /* 增加行高 */
+}
+
+
+.content .score{
+  font-size: 20px; /* 设置大字体 */
+  color: rgba(158, 88, 88, 0.89); /* 设置字体颜色为白色 */
+  margin-bottom: 5px; /* 在两行字之间添加间隔 */
+}
+
+.merchant {
+  display: flex; /* 使用Flex布局 */
+  align-items: center; /* 垂直居中 */
+ 
+  color: rgb(189, 118, 38); /* 设置灰色文字 */
+  font-size: 20px; /* 设置字体大小 */
+  margin-top: 5px; /* 在上方添加5px的间距 */
+}
+.merchant .icon {
+  width: 25px; 
+  height: 25px; 
+  margin-right: 5px; 
+}
+
+
