@@ -51,3 +51,8 @@ input{
 .green{
   color: green;
 }
+
+.marked {
+  background-color: yellow;
+}
+

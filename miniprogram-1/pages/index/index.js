@@ -28,16 +28,19 @@ Page({
     value: '', // 用于存储输入框中的值
     editIndex: null, // 用于存储正在编辑的留言的索引
     editText: '', // 用于存储正在编辑的留言的文本
-    list:[
+    originalList: [
       {
-        id:1,
-        text:"Docker容器和虚拟机的区别"
+        id: 1,
+        text: "Docker容器和虚拟机的区别",
+        marked: false
       },
       {
-        id:2,
-        text:"Git本控制，分支和合并的概念"
+        id: 2,
+        text: "Git本控制，分支和合并的概念",
+        marked: false
       }
     ],
+    list: [],
   },
 
 // 添加新留言
@@ -120,6 +123,17 @@ this.setData({
   });
 },
 
+toggleMark(e) {
+  let id = Number(e.currentTarget.dataset.id); // 将 id 转换为数字
+  let { list } = this.data;
+  let index = list.findIndex(item => item.id === id);
+  if (index !== -1) {
+    list[index].marked = !list[index].marked;
+    this.setData({
+      list
+    });
+  }
+},
 // 搜索函数
 search() {
   let { list, searchValue } = this.data;
@@ -127,6 +141,19 @@ search() {
   this.setData({
     list: filteredList
   });
+},
+search: function (e) {
+  let keyword = e.detail.value;
+  if (keyword === '') {
+    this.setData({
+      list: [...this.data.originalList]
+    });
+  } else {
+    let list = this.data.list.filter(item => item.text.includes(keyword));
+    this.setData({
+      list
+    });
+  }
 },
   
   delList(e){
@@ -179,19 +206,10 @@ search() {
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let arr = [1, 2, 3, '工大']
-    let result = [...arr,'工大1']
-    console.log(result, 'aaa')
-
-    //数组的删除
-    let arr1 = ['a', 'b', 'c']
-    let res = arr1.filter((item,i)=>{
-      //console.log(item,i)\
-      return i != 1
-    })  
-    console.log(res,'结果')
-
-    },
+    this.setData({
+      list: [...this.data.originalList]
+    });
+  },
     
   /**
    * 生命周期函数--监听页面初次渲染完成
