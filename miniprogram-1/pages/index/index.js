@@ -113,6 +113,21 @@ this.setData({
   list: []
 });
 },
+ // 当用户在搜索框中输入时，更新 searchValue 的值
+ handleSearchInput(e) {
+  this.setData({
+    searchValue: e.detail.value
+  });
+},
+
+// 搜索函数
+search() {
+  let { list, searchValue } = this.data;
+  let filteredList = list.filter(item => item.text.includes(searchValue));
+  this.setData({
+    list: filteredList
+  });
+},
   
   delList(e){
     let id = e.currentTarget.dataset.id

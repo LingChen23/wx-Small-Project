@@ -11,6 +11,11 @@
   <input value='{{value}}' placeholder="请输入..." bindinput="handleInput" bindconfirm="confirmInput"/>
 </view>
 
+<input placeholder="搜索..." bindinput="handleSearchInput" bindconfirm="search"/>
+
+<!-- 其它的代码... -->
+
+
 <view class='li {{index %2 == 1? "green" : "red"}}' wx:for='{{list}}' wx:key="index" bindtap="prepareModifyMessage" data-id="{{item.id}}">
   <view>
     <text>{{index+1}}</text>
