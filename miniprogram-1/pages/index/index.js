@@ -6,18 +6,6 @@ Page({
    * 设置了一个变量 
    */
   data: {
-
-    list:[
-      {
-        id:1,
-        text:"aaaa"
-      },
-      {
-        id:2,
-        text:"bbb"
-      }
-    ],
-
     navs:[{name:'腾讯视频', icon:'../../imagines/腾讯视频.png'},
     {name:'芒果TV', icon:'../../imagines/芒果tv.png'},
     {name:'更多', icon:'../../imagines/更多.png'}],
@@ -37,8 +25,94 @@ Page({
       {name: '9377页游', icon:'../../imagines/游戏，游戏机.png'}, 
        ], // 自定义数据列表
     customDataIndex: 0, // 自定义数据的当前索引
+    value: '', // 用于存储输入框中的值
+    editIndex: null, // 用于存储正在编辑的留言的索引
+    editText: '', // 用于存储正在编辑的留言的文本
+    list:[
+      {
+        id:1,
+        text:"Docker容器和虚拟机的区别"
+      },
+      {
+        id:2,
+        text:"Git本控制，分支和合并的概念"
+      }
+    ],
   },
 
+// 添加新留言
+addList() {
+  let { value, list } = this.data;
+  this.setData({
+    list: [...list, {
+      id: Date.now(),
+      text: value
+    }],
+    value: ''
+  });
+},
+
+ // 当用户在输入框中输入时，更新 value 的值
+ handleInput(e) {
+  this.setData({
+    value: e.detail.value
+  });
+},
+
+// 当用户点击留言本身时，准备修改留言
+prepareModifyMessage(e) {
+  let id = Number(e.currentTarget.dataset.id); // 将 id 转换为数字
+  let item = this.data.list.find(item => item.id === id);
+
+  if (item) {
+    this.setData({
+      editIndex: id,
+      value: item.text
+    });
+  }
+},
+
+// 删除留言
+delList(e) {
+  let id = Number(e.currentTarget.dataset.id); // 将 id 转换为数字
+  let list = this.data.list.filter(item => item.id !== id);
+
+  this.setData({
+    list
+  });
+},
+
+// 当用户按下回车键时，根据 editIndex 的值判断是添加新留言还是修改现有留言
+confirmInput() {
+  let { value, list, editIndex } = this.data;
+
+  if (editIndex !== null) { // 修改现有留言
+    let index = list.findIndex(item => item.id === editIndex);
+    if (index !== -1) {
+      list[index].text = value;
+      this.setData({
+        list,
+        editIndex: null,
+        value: ''
+      });
+    }
+  } else { // 添加新留言
+    this.setData({
+      list: [...list, {
+        id: Date.now(),
+        text: value
+      }],
+      value: ''
+    });
+  }
+},
+
+// 当用户点击按钮时，删除所有留言
+clearAllMessages() {
+this.setData({
+  list: []
+});
+},
   
   delList(e){
     let id = e.currentTarget.dataset.id
@@ -62,7 +136,7 @@ Page({
     })
 
   },
-  
+
 //执行函数
   add(){
     const { navs, customData, customDataIndex } = this.data;

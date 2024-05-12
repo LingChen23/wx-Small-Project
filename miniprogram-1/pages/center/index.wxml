@@ -11,3 +11,5 @@
     X
   </view>
 </view>
+
+<button bindtap="clearAllMessages">删除全部留言</button>

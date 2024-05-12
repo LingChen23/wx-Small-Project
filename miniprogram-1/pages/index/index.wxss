@@ -26,3 +26,28 @@
 }
 
 
+input{
+  /* box-sizing: border-box; */
+  padding: 20px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.li{
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  display: flex;
+  justify-content: space-between;
+}
+
+.li text{
+  margin-right: 10px;
+}
+
+.red{
+  color: red;
+}
+
+.green{
+  color: green;
+}
