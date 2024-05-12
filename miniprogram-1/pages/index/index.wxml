@@ -1,22 +1,22 @@
-<!-- <view>
-  姓名：{{dog.name}}
-</view>
-<view>
-  颜色：{{dog.color}}
-</view>
-<view>
-  年龄：{{dog.age}}
-</view> -->
 <button bind:tap="add">点击添加</button>
 
 <view class="box">
   <view bind:tap="del" data-index ='{{index}}' wx:for='{{navs}}'>
-    {{item}} --- {{index}}
+    <image src="{{item.icon}}" class="nav-icon" />
+    <text>{{item.name}}</text>
   </view>
 </view>
 
-<view>
-  {{navs}}
+<!-- <view>
+  <input value='{{value}}' placeholder="请输入..." bindconfirm="addList"/>
 </view>
 
-<!-- <button bind:tap="del">删除</button> -->
+<view class = 'li {{index %2 == 1? "green" : "red"}}' wx:for ='{{list}}' wx:key="index">
+  <view>
+  <text>{{index+1}}</text>
+  <text>{{item.text}}</text>
+  </view>
+  <view bind:tap="delList" data-id='{{item.id}}'>
+    X
+  </view>
+</view> -->

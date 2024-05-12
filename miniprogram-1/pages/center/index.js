@@ -6,50 +6,84 @@ Page({
    * 设置了一个变量 
    */
   data: {
-    n: 10,
-    til: 'hello1',
-    dog: {
-      color: '红色',
-      age: 3,
-      name: "小白"
-    },
-    value:"",
-    navs:['新闻','hao123','地图'],
+    editIndex: null, // 用于存储正在编辑的留言的索引
+    editText: '', // 用于存储正在编辑的留言的文本
+
+
     list:[
       {
         id:1,
-        text:"aaaa"
+        text:"Docker容器和虚拟机的区别"
       },
       {
         id:2,
-        text:"bbb"
+        text:"Git本控制，分支和合并的概念"
       }
     ],
   },
-
-  delList(e){
-    let id = e.currentTarget.dataset.id
-    console.log(id,'id')
+  // 添加新留言
+  addList() {
+    let { value, list } = this.data;
     this.setData({
-      list:this.data.list.filter((item,i)=>{
-        return item.id !== id
-      })
-    })
-  },
-
-  addList(e){
-    console.log(e,'e')
-    let value = e.detail.value
-    this.setData({
-      list:[...this.data.list,{
-        id:Date.now(),
-        text:value
+      list: [...list, {
+        id: Date.now(),
+        text: value
       }],
-      value: ""
-    })
-
+      value: ''
+    });
   },
+ // 当用户点击留言本身时，准备修改留言
+ prepareModifyMessage(e) {
+  let id = e.currentTarget.dataset.id;
+  let item = this.data.list.find(item => item.id === id);
 
+  if (item) {
+    this.setData({
+      editIndex: id,
+      value: item.text
+    });
+  }
+},
+
+// 当用户在输入框中输入时，更新 value 的值
+valueChange(e) {
+  this.setData({
+    value: e.detail.value
+  });
+},
+
+
+// 当用户按下回车键时，根据 editIndex 的值判断是添加新留言还是修改现有留言
+confirmInput() {
+  let { value, list, editIndex } = this.data;
+
+  if (editIndex !== null) { // 修改现有留言
+    let index = list.findIndex(item => item.id === editIndex);
+    if (index !== -1) {
+      list[index].text = value;
+      this.setData({
+        list,
+        editIndex: null,
+        value: ''
+      });
+    }
+  } else { // 添加新留言
+    this.setData({
+      list: [...list, {
+        id: Date.now(),
+        text: value
+      }],
+      value: ''
+    });
+  }
+},
+
+// 当用户点击按钮时，删除所有留言
+clearAllMessages() {
+  this.setData({
+    list: []
+  });
+},
 //执行函数
   add(){
     //console.log("函数执行了")

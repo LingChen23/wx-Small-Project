@@ -1,12 +1,28 @@
-.box{
+.box {
   font-size: 12px;
-  color: #999;
+  color: #fff; /* 将字体颜色设置为白色 */
   display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px; /* 设置整个背景的圆角 */
+  overflow: hidden; /* 隐藏超出圆角的部分 */
+  background-color: rgba(0, 0, 0, 0.2); /* 将整个背景颜色设置为透明黑色 */
   
 }
 
-.box view{
-  flex: 1;
-  border: 1px solid #000;
+.box view {
+  flex: 1 1 25%;
   padding: 3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* 将每个小部分的背景颜色设置为透明 */
+  justify-content: flex-start; /* 设置内容左对齐 */
 }
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+

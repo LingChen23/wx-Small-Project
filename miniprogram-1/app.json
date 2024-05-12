@@ -4,7 +4,7 @@
     "pages/banner/index",
     "pages/about/index",
     "pages/center/index",
-    
+
     "pages/logs/logs"
   ],
   "tabBar": {
