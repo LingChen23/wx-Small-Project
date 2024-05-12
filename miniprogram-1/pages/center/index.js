@@ -6,10 +6,9 @@ Page({
    * 设置了一个变量 
    */
   data: {
+    value: '', // 用于存储输入框中的值
     editIndex: null, // 用于存储正在编辑的留言的索引
     editText: '', // 用于存储正在编辑的留言的文本
-
-
     list:[
       {
         id:1,
@@ -21,6 +20,7 @@ Page({
       }
     ],
   },
+
   // 添加新留言
   addList() {
     let { value, list } = this.data;
@@ -30,6 +30,13 @@ Page({
         text: value
       }],
       value: ''
+    });
+  },
+
+  // 当用户在输入框中输入时，更新 value 的值
+  handleInput(e) {
+    this.setData({
+      value: e.detail.value
     });
   },
  // 当用户点击留言本身时，准备修改留言

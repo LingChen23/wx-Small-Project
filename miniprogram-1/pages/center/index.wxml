@@ -1,5 +1,6 @@
 <view>
-  <input value='{{value}}' placeholder="请输入..." bindconfirm="addList"/>
+  <input value='{{value}}' placeholder="请输入..." bindinput="handleInput" bindconfirm="addList"/>
+
 </view>
 
 <view class = 'li {{index %2 == 1? "green" : "red"}}' wx:for ='{{list}}' wx:key="index">
