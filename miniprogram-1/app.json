@@ -1,34 +1,47 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/banner/index",
-    "pages/about/index",
-    "pages/center/index",
-
+    "pages/index/index",
+   
+    "pages/center/index", "pages/about/index",
+    "pages/wode/index",
     "pages/logs/logs"
   ],
   "tabBar": {
-    "list": [{
+    "list": [
+      {
+        "pagePath": "pages/banner/index",
+        "text": "首页",
+        "iconPath": "imagines/guanzhu1.png",
+        "selectedIconPath": "imagines/首页1-面型.png"
+      },
+      {
       "pagePath": "pages/index/index",
-      "text": "主页",
-      "iconPath": "imagines/guanzhu1.png",
+      "text": "直播",
+      "iconPath": "imagines/直播.png",
       "selectedIconPath": "imagines/guanzhu2.png"
     },
   
   { "pagePath": "pages/center/index",
-    "text": "中心",
-    "iconPath": "imagines/shequ1.png",
+    "text": "雷达",
+    "iconPath": "imagines/雷达.png",
     "selectedIconPath": "imagines/shequ2.png"},
 
   { "pagePath": "pages/about/index",
-    "text": "关于",
-    "iconPath": "imagines/shequ1.png",
+    "text": "社区",
+    "iconPath": "imagines/社区2.png",
     "selectedIconPath": "imagines/shequ2.png"
-  }]
+  },
+  { "pagePath": "pages/wode/index",
+    "text": "我的",
+    "iconPath": "imagines/我的.png",
+    "selectedIconPath": "imagines/shequ2.png"
+  }
+]
   },
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "民了个民",
+    "navigationBarTitleText": "首页",
     "navigationBarBackgroundColor": "#ffffff"
   },
   "style": "v2",

@@ -31,7 +31,7 @@ Page({
       method:"GET",
       data:{
         cat:"华语",
-        limit: 10
+        limit: 21
       },
       success: res=>{
         console.log(res,'请求歌单')

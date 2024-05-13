@@ -28,3 +28,12 @@
   </view>
 </view>
 
+<view class = "vip">
+  VIP歌曲限时免费听
+</view>
+
+<swiper autoplay indicator-dots indicator-active-color="red" vertical>
+  <swiper-item wx:for='{{bannerList}}' wx:key="index">
+    <image src="{{item.pic}}" mode="" wx:key="index" />
+  </swiper-item>
+</swiper>

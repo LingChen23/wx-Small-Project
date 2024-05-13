@@ -13,10 +13,14 @@
 
 <input placeholder="搜索..." bindinput="handleSearchInput" bindconfirm="search"/>
 
-<!-- 其它的代码... -->
 
 
-<view class='li {{index %2 == 1? "green" : "red"}} {{item.marked ? "marked" : ""}}' wx:for='{{list}}' wx:key="index" bindtap="toggleMark" data-id="{{item.id}}">
+<view class='li {{index %2 == 1? "green" : "red"}} {{item.marked ? "marked" : ""}}' 
+      wx:for='{{list}}' 
+      wx:key="index" 
+      bindtap="toggleMark" 
+      bindlongpress="prepareModifyMessage" 
+      data-id="{{item.id}}">
   <view>
     <text>{{index+1}}</text>
     <text>{{item.text}}</text>
@@ -25,5 +29,6 @@
     X
   </view>
 </view>
+
 
 <button bindtap="clearAllMessages">删除全部留言</button>

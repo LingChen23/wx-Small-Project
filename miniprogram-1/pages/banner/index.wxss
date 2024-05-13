@@ -45,3 +45,30 @@ swiper{
   color: #fff;
   border-radius: 4px;
 }
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.custom-pagination view {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.custom-pagination .active {
+  background-color: #333;
+}
+
+.vip {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 10 10;
+}
+

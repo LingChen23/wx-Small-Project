@@ -68,9 +68,18 @@ prepareModifyMessage(e) {
   let item = this.data.list.find(item => item.id === id);
 
   if (item) {
-    this.setData({
-      editIndex: id,
-      value: item.text
+    let that = this;
+    wx.showModal({
+      title: '修改留言',
+      content: '请输入新的留言：',
+      success: function(res) {
+        if (res.confirm) {
+          that.setData({
+            editIndex: id,
+            value: item.text
+          });
+        }
+      }
     });
   }
 },
@@ -135,36 +144,27 @@ toggleMark(e) {
   }
 },
 // 搜索函数
-search() {
-  let { list, searchValue } = this.data;
-  let filteredList = list.filter(item => item.text.includes(searchValue));
-  this.setData({
-    list: filteredList
-  });
-},
 search: function (e) {
   let keyword = e.detail.value;
-  if (keyword === '') {
-    this.setData({
-      list: [...this.data.originalList]
-    });
-  } else {
-    let list = this.data.list.filter(item => item.text.includes(keyword));
-    this.setData({
-      list
-    });
-  }
+  let originalList = this.data.originalList;
+  let list = originalList.filter(item => item.text.includes(keyword));
+  this.setData({
+    list
+  });
 },
-  
-  delList(e){
-    let id = e.currentTarget.dataset.id
-    console.log(id,'id')
-    this.setData({
-      list:this.data.list.filter((item,i)=>{
-        return item.id !== id
-      })
+
+delList(e){
+  let id = e.currentTarget.dataset.id
+  console.log(id,'id')
+  this.setData({
+    list:this.data.list.filter((item,i)=>{
+      return item.id !== id
+    }),
+    originalList:this.data.originalList.filter((item,i)=>{
+      return item.id !== id
     })
-  },
+  })
+},
 
   addList(e){
     console.log(e,'e')
@@ -174,10 +174,14 @@ search: function (e) {
         id:Date.now(),
         text:value
       }],
+      originalList:[...this.data.originalList,{
+        id:Date.now(),
+        text:value
+      }],
       value: ""
     })
-
   },
+  
 
 //执行函数
   add(){
