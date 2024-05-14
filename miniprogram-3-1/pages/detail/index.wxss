@@ -10,6 +10,10 @@
   font-size: 12px;
 }
 
+.proname{
+  font-weight: bold;
+  font-size: 20px;
+}
 view{
   padding: 5px 10px;
   box-sizing: border-box;
@@ -55,3 +59,22 @@ view{
   color: #fff;
   padding: 20px;
 }
+
+.info-row {
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.info-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+

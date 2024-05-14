@@ -9,45 +9,45 @@ Page({
     bannerList: [],
     menuList: [{
         img: "https://m15.360buyimg.com/mobilecms/jfs/t1/175540/24/19329/6842/60ec0b0aEf35f7384/ec560dbf9b82b90b.png!q70.jpg",
-        title: "京东超市1",
+        title: "京东超市",
       },
       {
         img: "https://m15.360buyimg.com/mobilecms/jfs/t1/178015/31/13828/6862/60ec0c04Ee2fd63ac/ccf74d805a059a44.png!q70.jpg",
-        title: "京东数码1",
+        title: "京东数码",
       },
       {
-        img: "https://m15.360buyimg.com/mobilecms/jfs/t1/54043/33/19389/4660/62b049dbE3b9aef75/2fcd31afd5d702e4.png!q70.jpg",
-        title: "京东百货1",
+        img: "../../imagines/农场.png",
+        title: "东东农场",
       },
       {
-        img: " https://m15.360buyimg.com/mobilecms/jfs/t1/54043/33/19389/4660/62b049dbE3b9aef75/2fcd31afd5d702e4.png!q70.jpg",
-        title: "京东生鲜1",
+        img: "../../imagines/配送到家.png",
+        title: "京东到家",
       },
       {
-        img: "https://m15.360buyimg.com/mobilecms/jfs/t1/175540/24/19329/6842/60ec0b0aEf35f7384/ec560dbf9b82b90b.png!q70.jpg",
-        title: "京东超市2",
+        img: "../../imagines/首页2-1.png",
+        title: "服饰美妆",
       },
       {
-        img: "https://m15.360buyimg.com/mobilecms/jfs/t1/178015/31/13828/6862/60ec0c04Ee2fd63ac/ccf74d805a059a44.png!q70.jpg",
-        title: "京东数码2",
+        img: "../../imagines/领券.png",
+        title: "领券",
       },
       {
-        img: "https://m15.360buyimg.com/mobilecms/jfs/t1/54043/33/19389/4660/62b049dbE3b9aef75/2fcd31afd5d702e4.png!q70.jpg",
-        title: "京东百货2",
+        img: "../../imagines/充值中心.png",
+        title: "充值中心",
       },
       {
-        img: " https://m15.360buyimg.com/mobilecms/jfs/t1/54043/33/19389/4660/62b049dbE3b9aef75/2fcd31afd5d702e4.png!q70.jpg",
-        title: "京东生鲜2",
+        img: "../../imagines/95折.png",
+        title: "PLUS 95折",
       },
     ],
     shopList: []
   },
   getbannerList(){
     wx.request({
-      url: 'http://121.89.205.189:3000/api/banner/list',
+      url: 'http://121.89.205.189:3000/api/pro/recommendlist',
       method: "GET",
       success: res => {
-        console.log(res,'轮播你欧')
+        console.log(res,'轮播图')
 
         //将没有图片的过滤掉
         //item.img='123'

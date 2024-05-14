@@ -1,11 +1,11 @@
 <view class='top' style="padding-Top:{{safeTop+5}}px">
   <text>城市</text>
-  <view>搜索 -- {{safeTop}}</view>
+  <view>搜索</view>
 </view>
 
 <swiper autoplay indicator-dots>
   <swiper-item wx:for='{{bannerList}}' wx:key='index'>
-    <image src="{{item.img}}"></image>
+    <image src="{{item.img2}}"></image>
   </swiper-item>
 </swiper>
 

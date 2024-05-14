@@ -33,7 +33,7 @@
 </view>
 
 <swiper autoplay indicator-dots indicator-active-color="red" vertical>
-  <swiper-item wx:for='{{bannerList}}' wx:key="index">
+  <swiper-item wx:for='{{bannerList}}' wx:key="index" class="swiper-item">
     <image src="{{item.pic}}" mode="" wx:key="index" />
   </swiper-item>
 </swiper>
