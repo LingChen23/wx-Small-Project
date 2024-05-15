@@ -19,7 +19,6 @@ const admins = [{
     sex:"男",
     avatar:"https://inews.gtimg.com/news_bt/OIPr9G8LrCpP4K3cdWrmvalN2p2YWWB3URkibvS38awOEAA/641",
   }
-
 ]
 Page({
 
@@ -27,9 +26,17 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isAgreed: false // 初始状态为未同意
 
+      
+  
   },
-
+  agreeTerms: function () {
+    // 切换状态
+    this.setData({
+      isAgreed: !this.data.isAgreed
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

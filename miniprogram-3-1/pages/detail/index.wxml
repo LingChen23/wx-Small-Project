@@ -11,7 +11,6 @@
   <text class="info-text">配送地址：辽宁省 沈阳市 铁西区 沈阳工业大学（中央校区）</text>
 </view>
 
-
 <view class="info-row">
   <image src="../../imagines/仓库_库存.png" class="info-icon stock-icon"/>
   <text>库存 :{{info.stock}}</text>

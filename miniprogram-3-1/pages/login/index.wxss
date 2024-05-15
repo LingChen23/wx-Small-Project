@@ -1,19 +1,89 @@
-/* pages/login/index.wxss */
-.form{
+.form {
+  margin: 40px 40px 0px 40px; /* 上→右→下→左 */
   height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.user-login {
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .form-item {
   padding: 0 10px;
   box-sizing: border-box;
-  width: 100vw;
+  width: calc(100vw - 80px); /* 减去左右边距的总宽度 */
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
-.submit{
+.submit button {
+  margin: 20px 0;
+}
+
+
+.user-agreement {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.agreement-link {
+  color: rgb(41, 18, 158);
+  padding: 0px 5px;
+}
+
+/* Set background and border radius for input fields */
+.form-item input.weui-input[name="username"],
+.form-item input.weui-input[name="password"] {
+  background-color: #f2f2f2; /* Light grey background */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Set background and border radius for login button */
+.submit button[type="primary"] {
+  background-color: red; /* Red background */
+  border-radius: 5px; /* Rounded corners */
+  width: calc(100vw - 80px); /* Match the width of input fields */
+}
+
+/* Style for the '邮箱密码登录' and '用户协议' links */
+.agreement-link {
+  color: rgb(7, 7, 14);
+  font-size: 15px; /* Set font size */
+}
+
+/* Align '邮箱密码登录' and '用户协议' links to the right */
+
+.user-password {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Style for the '用户协议' and '隐私政策' links */
+.user-password .p2,
+.agreement-link {
+  color: rgb(16, 6, 65);
+  padding: 0px 5px;
+}
+
+/* 让“忘记了找回密码”靠左对齐 */
+.user-password .p1 {
+  text-align: left;
+}
+
+/* 让“邮箱密码登录”靠右对齐 */
+.user-password .p2 {
+  text-align: right;
+}
+
+/* 调整字体颜色和大小 */
+.user-password .p1,
+.user-agreement .user-item {
+  color: #a0a0a0; /* 设置为浅灰色 */
+  font-size: 15px; /* 设置字体大小 */
 }
