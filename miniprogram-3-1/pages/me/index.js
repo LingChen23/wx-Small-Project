@@ -80,7 +80,7 @@ Page({
     {
       img: "https://c-ssl.duitang.com/uploads/blog/202302/23/20230223233536_47c88.jpeg",
       url: "/pages/shop/index",
-
+      like:"1090"
     },
     {
       img: "https://c-ssl.duitang.com/uploads/blog/202302/23/20230223233536_47c88.jpeg",

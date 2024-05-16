@@ -107,6 +107,7 @@
   <view wx:for="{{production}}" wx:key="index" class="nav-item">
     <navigator url="{{item.url}}">
       <image src="{{item.img}}" mode=""/>
+      <image class="aixin" src="imagines/爱心.png" mode=""/>
       <text class="like-text">{{item.like}}</text>
     </navigator>
   </view>
