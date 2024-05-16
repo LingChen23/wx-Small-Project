@@ -23,18 +23,13 @@ Page({
       },
       {
         img: "imagines/我的钱包.png",
-        title: "我的钱包",
+        title: "抖声外卖",
         url: "/pages/money/index"
       },
       {
-        img: "imagines/常用_查看更多.png",
-        title: "查看更多",
-        url: "/pages/much/index"
-      },
-      {
-        img: "imagines/常用_查看更多.png",
-        title: "查看更多",
-        url: "/pages/much/index"
+        img: "imagines/我的钱包.png",
+        title: "我的钱包",
+        url: "/pages/money/index"
       },
       {
         img: "imagines/常用_查看更多.png",
@@ -90,7 +85,7 @@ Page({
     {
       img: "https://c-ssl.duitang.com/uploads/blog/202302/23/20230223233536_47c88.jpeg",
       url: "/pages/shop/index",
-      like:"1090"
+
     },
     {
       img: "https://c-ssl.duitang.com/uploads/blog/202302/23/20230223233536_47c88.jpeg",

@@ -24,11 +24,11 @@
       <view class="gray-bg"></view> <!-- 灰色背景 -->
     </view>
     <view class="right">
-      <view class="info"> 
+      <view class="info">
         <view class="nickname"> {{user.nickname}} </view>
         <image class="img1" src="imagines/展开.png" mode=""/>
       </view>
-      <view class="info"> 
+      <view class="info">
         <text> 抖声号：{{user.number}} </text>
         <image class="img2" src="imagines/二维码 (1).png" mode=""/>
       </view>
@@ -54,66 +54,77 @@
       </view>
       <view class="add-friend">添加朋友</view>
     </view>
-  
-    <view class="introduce">
-  <div class="label-info">
-    <text class="text1">点击添加介绍，让大家认识你... </text>
-    
-    <view class="label-row">
-      <text class="religin">辽宁·沈阳</text>
-      <text class="text-label">+ 添加年龄、学校等标签</text>
-    </view>
-  </div>
-  <image class="icon-introduce" src="imagines/编辑 (1).png"></image>
-</view>
 
+    <view class="introduce">
+      <div class="label-info">
+        <text class="text1">点击添加介绍，让大家认识你... </text>
+
+        <view class="label-row">
+          <text class="religin">辽宁·沈阳</text>
+          <text class="text-label">+ 添加年龄、学校等标签</text>
+        </view>
+      </div>
+      <image class="icon-introduce" src="imagines/编辑 (1).png"></image>
+    </view>
+
+    <!-- <view class="nav">
+      <view wx:for="{{menuList}}" wx:key='index'>
+        <navigator url="{{item.url}}">
+          <image src="{{item.img}}" mode=""/>
+          <text>
+            {{item.title}}
+          </text>
+        </navigator>
+      </view>
+    </view> -->
 <view class="nav">
   <view wx:for="{{menuList}}" wx:key='index'>
     <navigator url="{{item.url}}">
-      <image src="{{item.img}}" mode=""/>
-      <text>
-      {{item.title}}
-    </text>
-    </navigator>
-  </view>
-</view>
-<view class="nav-text">
-  <view class="na-text" data-index="0" bindtap="toggleImage">
-    <text>作品</text>
-    <image src="imagines/展开 (1).png" mode="" data-index="0" />
-  </view>
-
-  <!-- <view class="na-text" data-index="1" bindtap="toggleImage">
-    <text>时刻</text>
-    <image src="imagines/展开 (1).png" mode="" data-index="1" />
-  </view>
-  <view class="na-text" data-index="2" bindtap="toggleImage">
-    <text>推荐</text>
-    <image src="imagines/展开 (1).png" mode="" data-index="2" />
-  </view>
-
-  <view class="na-text" data-index="3" bindtap="toggleImage">
-    <text>收藏</text>
-    <image src="imagines/展开 (1).png" mode="" data-index="3" />
-  </view>
-
-  <view class="na-text" data-index="4" bindtap="toggleImage">
-    <text>喜欢</text>
-    <image src="imagines/展开 (1).png" mode="" data-index="4" />
-  </view> -->
-</view>
-<!--  -->
-<view class="nav-production">
-  <view wx:for="{{production}}" wx:key="index" class="nav-item">
-    <navigator url="{{item.url}}">
-      <image src="{{item.img}}" mode=""/>
-      <image class="aixin" src="imagines/爱心.png" mode=""/>
-      <text class="like-text">{{item.like}}</text>
+      <view class="menu-item">
+        <image class="avatar" src="{{item.img}}" mode=""/>
+        <text class="username">{{item.title}}</text>
+      </view>
     </navigator>
   </view>
 </view>
 
+    <view class="nav-text">
+      <view class="na-text" data-index="0" bindtap="toggleImage">
+        <text>作品</text>
+        <image src="imagines/展开 (1).png" mode="" data-index="0" />
+      </view>
+
+      <!-- <view class="na-text" data-index="1" bindtap="toggleImage">
+        <text>时刻</text>
+        <image src="imagines/展开 (1).png" mode="" data-index="1" />
+      </view>
+      <view class="na-text" data-index="2" bindtap="toggleImage">
+        <text>推荐</text>
+        <image src="imagines/展开 (1).png" mode="" data-index="2" />
+      </view>
+
+      <view class="na-text" data-index="3" bindtap="toggleImage">
+        <text>收藏</text>
+        <image src="imagines/展开 (1).png" mode="" data-index="3" />
+      </view>
+
+      <view class="na-text" data-index="4" bindtap="toggleImage">
+        <text>喜欢</text>
+        <image src="imagines/展开 (1).png" mode="" data-index="4" />
+      </view> -->
+    </view>
+    <!--  -->
+    <view class="nav-production">
+      <view wx:for="{{production}}" wx:key="index" class="nav-item">
+        <navigator url="{{item.url}}">
+          <image src="{{item.img}}" mode=""/>
+          <image class="aixin" src="imagines/爱心.png" mode=""/>
+          <text class="like-text">{{item.like}}</text>
+        </navigator>
+      </view>
+    </view>
 
 
-</view>
+
+  </view>
 </scroll-view>
