@@ -30,6 +30,16 @@ Page({
         img: "imagines/常用_查看更多.png",
         title: "查看更多",
         url: "/pages/much/index"
+      },
+      {
+        img: "imagines/常用_查看更多.png",
+        title: "查看更多",
+        url: "/pages/much/index"
+      },
+      {
+        img: "imagines/常用_查看更多.png",
+        title: "查看更多",
+        url: "/pages/much/index"
       }
     ],
     production:[{

@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/about/index","pages/banner/index",
+    "pages/index/index","pages/banner/index","pages/about/index",
     "pages/center/index",
-    "pages/index/index",
+    
     "pages/logs/logs"
   ],
   "tabBar": {
