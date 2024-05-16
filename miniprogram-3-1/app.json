@@ -1,9 +1,13 @@
 {
   "pages": [
-    "pages/login/index","pages/me/index",
+   "pages/me/index","pages/login/index", 
+    "pages/shop/index",
     "pages/index/index",
+    "pages/music/index",
+    "pages/money/index",
+    "pages/much/index",
     "pages/cart/index",
-    
+    "pages/history/index",
     "pages/detail/index",
     "pages/logs/logs"
   ],
@@ -30,7 +34,7 @@
   },
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "民了个民",
+    "navigationBarTitleText": "抖声",
     "navigationBarBackgroundColor": "#ffffff"
   },
   "style": "v2",

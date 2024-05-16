@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/center/index", 
+     "pages/center/index", "pages/banner/index",
     "pages/index/index",
-   "pages/banner/index",
+  
     "pages/about/index",
     "pages/wode/index",
     "pages/logs/logs"

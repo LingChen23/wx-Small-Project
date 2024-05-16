@@ -3,9 +3,10 @@ const admins = [{
     id: 1,
     username: "lisi",
     password: "123456",
-    nickname: "李四1",
+    nickname: "凌晨.ヾ",
     age: 20,
-    tel: 17729930454,
+    number:"210405225",
+    tel: "15524497402",
     sex:"男",
     avatar:"https://img0.baidu.com/it/u=530540642,263790536&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667",
   },
@@ -15,6 +16,7 @@ const admins = [{
     password: "123456",
     nickname: "张三ll",
     age: 20,
+    number:"210405225",
     tel: 17729340454,
     sex:"男",
     avatar:"https://inews.gtimg.com/news_bt/OIPr9G8LrCpP4K3cdWrmvalN2p2YWWB3URkibvS38awOEAA/641",
@@ -27,9 +29,6 @@ Page({
    */
   data: {
     isAgreed: false // 初始状态为未同意
-
-      
-  
   },
   agreeTerms: function () {
     // 切换状态
@@ -58,7 +57,7 @@ Page({
 
     //可以用过滤
     let result = admins.filter(item=>{
-      return item.username === value.username && item.password === value.password
+      return item.tel === value.tel && item.password === value.password
     })
 
     console.log(result,'a')
@@ -76,13 +75,12 @@ Page({
           }, 1500)
           //将用户信息存储，其他页面会用到
           wx.setStorageSync('user', result[0])
-          
         }
       })
     }
     else{
       wx.showToast({
-        title: '用户名或密码错误',
+        title: '手机号或密码错误',
         icon: "error"
       })
     }
