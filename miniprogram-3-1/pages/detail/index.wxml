@@ -41,3 +41,30 @@
     
   </view>
 </view>
+
+<view class="title">评价</view>
+<view class="eav">
+  
+  <view class="back">
+    及其好用
+  </view>
+  <view class="back">
+    性价比高
+  </view>
+</view>
+
+
+<view class="navbar">
+    <navigator url="/pages/shop/shop" class="nav-item">
+        <image src="/assets/image/detail/3.1店铺.png" class="nav-icon"/>
+        <text>店铺</text>
+    </navigator>
+    <navigator url="/pages/customer-service/customer-service" class="nav-item">
+        <image src="/assets/image/detail/客服.png" class="nav-icon"/>
+        <text>客服</text>
+    </navigator>
+    <navigator url="/pages/cart/cart" class="nav-item">
+        <image src="/assets/image/detail/购物车.png" class="nav-icon"/>
+        <text>立即购买</text>
+    </navigator>
+</view>

@@ -8,7 +8,7 @@ Page({
       tag: [
           {
               img: "../../assets/image/friend/地图.png",
-              url: "/pages/chitchat/chitchat",
+              url: "/pages/locate/locate",
               username: "你在哪里"
           },
           {

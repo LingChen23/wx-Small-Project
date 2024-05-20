@@ -1,14 +1,15 @@
 {
-  "pages": [
+  "pages": ["pages/me/index","pages/cart/index",
+    "pages/locate/locate",
     "pages/chat/index",
     "pages/chitchat/index",
-    "pages/me/index","pages/login/index",
+    "pages/login/index",
     "pages/shop/index",
     "pages/index/index",
     "pages/music/index",
     "pages/money/index",
     "pages/much/index",
-    "pages/cart/index",
+    
     "pages/history/index",
     "pages/detail/index",
     "pages/logs/logs"
