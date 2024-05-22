@@ -1,4 +1,4 @@
-// pages/banner/index.js
+// pages/about/index.js
 Page({
 
   /**

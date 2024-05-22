@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/banner/index","pages/center/index",  
+    "pages/about/index","pages/banner/index","pages/center/index",  
     "pages/index/index",
   
-    "pages/about/index",
+    
     "pages/wode/index",
     "pages/logs/logs"
   ],
